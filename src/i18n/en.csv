@@ -3,10 +3,10 @@ apiVersion,API Version
 apiVersionPrefix,API
 favoriteColor,Favorite Colorway
 favoriteKeyboard,Favorite Keyboard
-hostedOn,Hosted on GitHub Pages
+hostedOn,...
 jobsAhead,Ahead
 jobsWaiting,job(s) waiting
-maintain,This project is maintained by QMK collaborators and contributors like you!
+maintain,!!!
 ready,Ready
 searchKeycodes,search
 serverIs,Service
@@ -46,11 +46,24 @@ keycodesTab:AppMediaMouse:label,"App, Media and Mouse"
 keycodesTab:ISO/JIS:label,ISO/JIS
 keycodesTab:KeyboardSettings:label,Keyboard Settings
 keycodesTab:Quantum:label,Quantum
+keycodesTab:BLE_Settings:label,BLE Settings
 keymap:label,Keymap
 keymapHelp:label,Help
 keymapHelp:title,How do I use keymap.json?
 keymapName:label,Keymap Name
 keymapName:placeholder,custom keymap name
+speed:label,BLE Speed
+speed:placeholder,""
+power:label,BLE Power
+power:placeholder,""
+bandwidth:label,BLE Bandwidth
+bandwidth:placeholder,""
+sleepDelay:label,Sleep Delay
+sleepDelay:placeholder,"unit: s, default: 5 min"
+wakeupKey:label,WakeUp Key
+wakeupKey:placeholder,"Wake up key"
+rgbNum:label,RGB LED Count
+rgbNum:placeholder,"unit: s, default: 16"
 layer:confirm,Are you sure you want to clear layer?
 layer:label,Layer
 layer:title,Clear Layer

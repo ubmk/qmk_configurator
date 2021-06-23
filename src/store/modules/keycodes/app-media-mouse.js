@@ -2,7 +2,7 @@ export default [
   { label: 'AppMediaMouse', width: 'label', group: true },
 
   { label: 'Application', width: 'label' },
-
+  /*
   { name: 'Power', code: 'KC_PWR', title: 'System Power Down' },
   { name: 'Sleep', code: 'KC_SLEP', title: 'System Sleep' },
   { name: 'Wake', code: 'KC_WAKE', title: 'System Wake' },
@@ -10,6 +10,7 @@ export default [
   { name: 'Exec', code: 'KC_EXEC', title: 'Execute' },
   { name: 'Help', code: 'KC_HELP', title: 'Help' },
   { name: 'Menu', code: 'KC_MENU', title: 'Menu (Legacy)' },
+  */
   { name: 'Select', code: 'KC_SLCT', title: 'Select' },
   { name: 'Stop', code: 'KC_STOP', title: 'Stop' },
   { name: 'Again', code: 'KC_AGIN', title: 'Again' },
@@ -94,7 +95,6 @@ export default [
     title: 'Decrease the brightness of screen (Laptop)',
     width: 1500
   },
-
   { label: 'Multimedia Keys', width: 'label' },
 
   { name: 'Previous', code: 'KC_MPRV', title: 'Previous Track' },

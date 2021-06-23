@@ -3,17 +3,19 @@ import ansi from './ansi';
 import iso_jis from './iso-jis';
 import quantum from './quantum';
 import settings from './kb-settings';
+import ble_settings from './ble-settings';
 import media from './app-media-mouse';
 import steno from './steno';
 const state = {
-  keycodes: [...ansi, ...iso_jis, ...quantum, ...settings, ...media],
+  keycodes: [...ansi, ...iso_jis, ...quantum, ...settings, ...media, ...ble_settings],
   searchFilter: '',
   searchCounters: {
     ANSI: 0,
     'ISO/JIS': 0,
     Quantum: 0,
     KeyboardSettings: 0,
-    AppMediaMouse: 0
+    AppMediaMouse: 0,
+    BLE: 0
   }
 };
 
@@ -54,11 +56,12 @@ const mutations = {
       ...quantum,
       ...settings,
       ...media,
+      ...ble_settings,
       ...steno
     ];
   },
   disableSteno(state) {
-    state.keycodes = [...ansi, ...iso_jis, ...quantum, ...settings, ...media];
+    state.keycodes = [...ansi, ...iso_jis, ...quantum, ...settings, ...media, ...ble_settings];
   },
   setSearchFilter(state, newVal) {
     state.searchFilter = newVal;
@@ -68,7 +71,8 @@ const mutations = {
         'ISO/JIS': countMatches(state.searchFilter, iso_jis),
         Quantum: countMatches(state.searchFilter, quantum),
         KeyboardSettings: countMatches(state.searchFilter, settings),
-        AppMediaMouse: countMatches(state.searchFilter, media)
+        AppMediaMouse: countMatches(state.searchFilter, media),
+        USBM: countMatches(state.searchFilter, ble_settings)
       };
     }
   }

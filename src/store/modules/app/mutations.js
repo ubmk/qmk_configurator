@@ -47,6 +47,24 @@ const mutations = {
   setLayout(state, _layout) {
     state.layout = _layout;
   },
+  setSpeed(state, _speed) {
+    state.speed = _speed;
+  },
+  setPower(state, _power) {
+    state.power = _power;
+  },
+  setBandwidth(state, _bandwidth) {
+    state.bandwidth = _bandwidth;
+  },
+  setSleepDelay(state, _sleepDelay) {
+    state.sleepDelay = _sleepDelay;
+  },
+  setWakeupKey(state, _wakeupKey) {
+    state.wakeupKey = _wakeupKey;
+  },
+  setRgbNum(state, _rgbNum) {
+    state.rgbNum = _rgbNum;
+  },
   setKeymapName(state, _keymapName) {
     state.keymapName = _keymapName.replace(/[\s/]/g, '_').toLowerCase();
   },

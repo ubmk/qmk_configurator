@@ -35,7 +35,7 @@
       >
         <font-awesome-icon icon="upload" size="lg" fixed-width />
       </button>
-      <button
+      <!--button
         id="import-url"
         v-tooltip.bottom="$t('importUrlJSON.title')"
         @click="openVeil"
@@ -72,7 +72,7 @@
       >
         <font-awesome-icon icon="keyboard" size="lg" fixed-width />
         <span class="hide-small">{{ $t('testKeys.label') }}</span>
-      </button>
+      </button-->
       <input
         id="fileImport"
         type="file"
@@ -93,7 +93,7 @@
       </ElectronBottomControls>
     </div>
     <div v-else class="botctrl-1-2">
-      <button
+      <!--button
         class="fixed-size"
         id="source"
         @click="downloadSource"
@@ -102,7 +102,7 @@
       >
         <font-awesome-icon icon="download" size="lg" fixed-width />
         {{ $t('downloadSource.label') }}
-      </button>
+      </button-->
       <button
         id="fwFile"
         @click="downloadFirmware"

@@ -572,18 +572,18 @@ function getExclusionList() {
   }, {});
 }
 
-function compileLayout(_keyboard, _keymapName, _layout) {
+function compileLayout(_keyboard, _keymapName, _layout, _config) {
   disableCompileButton();
   let template = store.state.keymap.templates.keymap;
   const layers = store.getters['keymap/exportLayers']({ compiler: true });
-  let request = JSON.stringify(
-    Object.assign(template, {
-      keyboard: _keyboard,
-      keymap: _keymapName,
-      layout: _layout,
-      layers: layers
-    })
-  );
+  console.log(store.state);
+  let request = Object.assign(template, {
+    keyboard: _keyboard,
+    keymap: _keymapName,
+    layout: _layout,
+    layers: layers,
+    config: _config
+  });
   console.log(request);
   if (store.getters['status/empty']) {
     store.commit('status/append', '\n');

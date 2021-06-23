@@ -14,7 +14,7 @@ function setDefaultConfiguratorSettings() {
     darkmodeEnabled: osDarkMode,
     favoriteKeyboard: '',
     favoriteColor: '',
-    clearLayerDefault: false
+    clearLayerDefault: true
   };
   localStorageSet(CONSTS.configuratorSettings, JSON.stringify(initialConfig));
   return initialConfig;
@@ -60,6 +60,12 @@ const state = {
   notes: '',
   tutorialEnabled: false,
   electron: false,
+  sleepDelay: 600,
+  wakeupKey: 2,
+  power: 4,
+  speed: 3,
+  bandwidth: 1,
+  rgbNum: 16,
   languages: [
     { value: 'en', label: 'English' },
     { value: 'de', label: 'Deutsch' },

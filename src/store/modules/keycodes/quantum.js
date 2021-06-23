@@ -57,8 +57,8 @@ export default [
     code: 'KC_TRNS',
     title: 'Use the next lowest non-transparent key'
   },
-  { name: 'Reset', code: 'RESET', title: 'Reset the keyboard' },
-  { name: 'Debug', code: 'DEBUG', title: 'Toggle debug mode' },
+  // { name: 'Reset', code: 'RESET', title: 'Reset the keyboard' },
+  // { name: 'Debug', code: 'DEBUG', title: 'Toggle debug mode' },
   {
     name: 'EEPROM Reset',
     code: 'EEP_RST',
@@ -125,9 +125,8 @@ export default [
     layer: 0,
     title: 'Switch to layer for one keypress'
   },
-
+/*
   { width: 500 },
-
   makeLT(0),
   makeLT(1),
   makeLT(2),
@@ -145,7 +144,7 @@ export default [
   makeLT(13),
   makeLT(14),
   makeLT(15),
-
+  */
   {
     label:
       'Mod key combinations (A = Alt, C = Control, G = Windows/Command, S = Shift)',

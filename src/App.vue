@@ -2,9 +2,9 @@
   <div id="app" @click="dismiss">
     <span style="display:none">{{ revision }}</span>
     <div>
-      <header>
+      <!--header>
         <p class="random-potato">{{ potatoFact }}</p>
-      </header>
+      </header-->
       <router-view />
       <spinner :isVisible="showSpinner" :status="spinnerMsg" />
       <InfoBar :msg="message" />
@@ -15,7 +15,7 @@
       <p>{{ $t('hostedOn') }}</p>
       <p style="font-size:10px">version: {{ revision }}</p>
     </footer>
-    <div
+    <!--div
       class="help"
       :class="helpClasses"
       @click="toggleTutorial"
@@ -64,7 +64,7 @@
       sandbox="allow-scripts allow-same-origin"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe>
+    ></iframe-->
     <SnowFlake v-if="snowflakes" />
   </div>
 </template>

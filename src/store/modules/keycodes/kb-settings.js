@@ -57,12 +57,14 @@ export default [
     title: 'Swap Backslash and Backspace',
     width: 1500
   },
+  /*
   {
     name: 'NKRO On',
     code: 'NK_ON',
     title: 'Force N-Key Rollover (NKRO) on',
     width: 1500
   },
+  */
   {
     name: 'Swap Alt/GUI',
     code: 'AG_SWAP',
@@ -132,12 +134,14 @@ export default [
     title: 'Unswap Backslash and Backspace',
     width: 1500
   },
+  /*
   {
     name: 'NKRO Off',
     code: 'NK_OFF',
     title: 'Force N-Key Rollover (NKRO) off',
     width: 1500
   },
+  */
   {
     name: 'Rev Alt/GUI',
     code: 'AG_NORM',
@@ -150,13 +154,13 @@ export default [
     title: 'Unswap Ctrl and GUI on both sides',
     width: 1500
   },
+/*
   {
     name: 'Toggle NKRO',
     code: 'NK_TOGG',
     title: 'Turn NKRO on or off',
     width: 1500
   },
-
   {
     label: 'Backlight settings',
     width: 'label'
@@ -199,7 +203,7 @@ export default [
     code: 'BL_DEC',
     title: 'Decrease the backlight level'
   },
-
+*/
   { label: 'RGB Lighting settings', width: 'label' },
 
   {
@@ -222,7 +226,8 @@ export default [
   { name: 'RGB Mode G', code: 'RGB_M_G', title: 'RGB Mode: Gradient' },
   { name: 'RGB Mode T', code: 'RGB_M_T', title: 'RGB Mode: Test' },
   { width: 0 },
-  { width: 1000 },
+  //{ width: 1000 },
+  { name: 'RGB Reset', code: 'RGBRST', title: 'Reset RGB Config' },
   { name: 'RGB Mode -', code: 'RGB_RMOD', title: 'Previous RGB mode' },
   { name: 'Hue -', code: 'RGB_HUD', title: 'Decrease hue' },
   { name: 'Sat -', code: 'RGB_SAD', title: 'Decrease saturation' },

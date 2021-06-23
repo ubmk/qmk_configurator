@@ -32,7 +32,7 @@
             >({{ searchCounters[index] }})</span
           ></span
         >
-        <span class="end-tab"
+        <!--span class="end-tab"
           ><font-awesome-icon class="keycode-search-icon" icon="search"/><input
             @focus="stopListening"
             @blur="startListening"
@@ -41,7 +41,7 @@
             v-model="searchFilter_"
             autocomplete="off"
             spellcheck="false"
-        /></span>
+        /></span-->
       </div>
       <div class="tab-area">
         <template v-for="(key, index) in activeTab">

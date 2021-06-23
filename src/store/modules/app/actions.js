@@ -1,6 +1,6 @@
 import axios from 'axios';
 import isUndefined from 'lodash/isUndefined';
-import { backend_keyboards_url } from '@/store/modules/constants';
+import { backend_keyboards, backend_keyboards_url } from '@/store/modules/constants';
 import { getPreferredLayout, getExclusionList } from '@/jquery';
 import { localStorageSet, CONSTS } from '@/store/localStorage';
 
@@ -26,6 +26,7 @@ const actions = {
    * load the default keymap for the currently selected keyboard
    */
   async loadDefaultKeymap({ state }) {
+    console.log("Load keymap");
     const keyboardPath = state.keyboard.slice(0, 1);
     // eslint-disable-next-line
     const keyboardName = state.keyboard.replace(/\//g, '_');
@@ -52,6 +53,7 @@ const actions = {
    *  @return {object} promise that will be fulfilled once action is complete
    */
   changeKeyboard({ state, commit, dispatch }, keyboard) {
+    console.log('change keyboard');
     const store = this;
     let clearKeymap = false;
     const promise = new Promise(resolve => {
@@ -114,7 +116,7 @@ const actions = {
       return p;
     }
     return axios
-      .get(backend_keyboards_url + '/' + state.keyboard)
+      .get(backend_keyboards + '/' + state.keyboard + '/info.json')
       .then(resp => {
         commit('processLayouts', resp);
         return resp;

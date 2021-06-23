@@ -5,7 +5,7 @@
       <statusPanel />
       <controllerBottom />
     </div>
-    <div class="hint hint-right">
+    <!--div class="hint hint-right">
       <a
         href="https://github.com/qmk/qmk_toolbox/releases"
         v-tooltip="$t('downloadToolbox.label')"
@@ -13,7 +13,7 @@
         rel="noopener"
         >{{ $t('downloadToolbox.label') }}</a
       >
-    </div>
+    </div-->
     <div class="split-content">
       <div class="left-side">
         <layerControl />
@@ -119,7 +119,9 @@ export default {
           .replace(/^Jtk/, 'JTK')
           .replace(/Kat/, 'KAT')
           .replace(/Wob/, 'WOB')
-          .replace(/Ta/, 'TA');
+          .replace(/Ta/, 'TA')
+          .replace(/Mt3/, 'MT3')
+          .replace(/Mg/, 'MG');
       });
     },
     redditPost() {
