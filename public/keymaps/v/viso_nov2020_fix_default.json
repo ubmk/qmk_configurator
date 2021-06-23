@@ -1,0 +1,8 @@
+{
+    "keyboard": "viso/now2020_fix",
+    "keymap": "default",
+    "commit": "",
+    "layout": "LAYOUT_numpad_ansi",
+    "layers": [["KC_ESC","KC_BSPC","MO(1)","KC_MUTE","KC_NLCK","KC_PSLS","KC_PAST","KC_PMNS","KC_P7","KC_P8","KC_P9","KC_PPLS","KC_P4","KC_P5","KC_P6","KC_P1","KC_P2","KC_P3","KC_PENT","KC_P0","KC_PDOT","KC_VOLD","KC_VOLU"],["KC_TRNS","KC_TRNS","KC_TRNS","KC_MPLY","KC_TRNS","USB_SEL","BLE_SEL","DELBNDS","KC_TRNS","KC_TRNS","KC_TRNS","AD_WO_L","DEL_ID0","DEL_ID1","DEL_ID2","ADV_ID0","ADV_ID1","ADV_ID2","DEVICE_ID","ENT_DFU","ENT_SLP","KC_MPRV","KC_MNXT"]]
+  }
+    
